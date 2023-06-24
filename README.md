@@ -11,7 +11,6 @@
   * Angular crash course
   * Full Stack Application Development
 ## Description
-Are you looking for a Job, and your employer is asking for the following skill set?
 
 Spring Boot, REST API, Restful Webservices, Reactive Programming, Spring WebFlux, Java Script, Angular, Type Script, Oauth, NoSQL, etc
 
