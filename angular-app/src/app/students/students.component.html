@@ -1,0 +1,6 @@
+<div *ngFor="let student of students">
+<h2>Name : {{student.name}}</h2>
+<button type="button" (click)="onSelect(student.age)">Show {{student.name}} Age!</button>
+</div>
+
+<app-students-age [studentAge]="selectedStudentAge"></app-students-age>

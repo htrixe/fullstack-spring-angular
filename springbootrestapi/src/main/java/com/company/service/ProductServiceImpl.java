@@ -7,6 +7,7 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.company.model.Product;
+import com.company.model.ProductReviews;
 
 @Service
 public class ProductServiceImpl implements ProductService {
@@ -51,5 +52,17 @@ public class ProductServiceImpl implements ProductService {
 	public void deleteProduct(Long id) {
 		System.out.println("Status.. "+products.remove(getProduct(id)));
 		
+	}
+
+	@Override
+	public List<ProductReviews> getProductReviews(Long id) {
+		List<ProductReviews> reviewList = new ArrayList<>();
+		ProductReviews review1 = new ProductReviews(1l, 1L, "Some review 1");
+		ProductReviews review2 = new ProductReviews(2l, 1L, "Some review 2");
+		
+		reviewList.add(review1);
+		reviewList.add(review2);
+		
+		return reviewList;
 	}
 }

@@ -23,6 +23,7 @@ public class FileStorageService {
 	/*
 	 * @Value("${file.upload-dir}") private String uploadDir;
 	 */
+
     @Autowired
     public FileStorageService() {
         this.fileStorageLocation = Paths.get("C:/Users/Admin/Desktop/uploads")
